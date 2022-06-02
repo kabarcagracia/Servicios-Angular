@@ -1,0 +1,14 @@
+.caja {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+   
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    margin: 2em;
+}
+.subcaja {
+    border: 1px solid black;
+    padding: 1em;
+    /*width: 10em;*/
+}

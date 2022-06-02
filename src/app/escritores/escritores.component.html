@@ -1,0 +1,15 @@
+<h1>Listado Escritores</h1>
+
+<div>
+<select id="aa" (change)="changeCiudad($event)">
+    <option *ngFor="let ciudad of data">{{ciudad}}</option>
+</select>
+</div>
+<button (click)="escritorPromesa()">ESCRITORES PAIS CON PROMESAS</button>
+
+<div class="caja" >
+    <div class="subcaja" *ngFor="let escritor of arrEscritores" style="cursor:pointer" routerLink="/escritor/{{escritor.apellidos}}">
+        <h5>{{escritor.nombre}} {{escritor.apellidos}}</h5>
+        <p>{{escritor.ciudad}}</p>
+    </div>
+</div>

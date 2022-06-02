@@ -1,0 +1,20 @@
+<div>
+<h1>sdfs</h1>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Edad</th>
+        <th>Activo</th>
+    </tr>
+    <tr *ngFor="let persona of arrPersonas">
+        <td>{{persona.nombre}}</td>
+        <td>{{persona.apellidos}}</td>
+        <td>{{persona.edad}}</td>
+        <td>{{persona.activo}}</td>
+    </tr>
+</table>
+</div>
+
+
+<router-outlet></router-outlet>
